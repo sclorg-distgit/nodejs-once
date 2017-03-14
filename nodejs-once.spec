@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-once
-Version:        1.3.3
-Release:        2%{?dist}
+Version:        1.4.0
+Release:        1%{?dist}
 Summary:        Run a function exactly one time
 BuildArch:      noarch
 ExclusiveArch:  %{nodejs_arches} noarch
@@ -34,6 +34,9 @@ cp -pr package.json once.js %{buildroot}%{nodejs_sitelib}/once
 %doc LICENSE README.md
 
 %changelog
+* Thu Jan 05 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.4.0-1
+- Updated with script
+
 * Thu Jun 09 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.3.3-2
 - Resolves: rhbz#1334856 , fixes wrong license
 
